@@ -1,0 +1,35 @@
+.box{
+    height: 350px;
+    width: 100%;
+    overflow: scroll;
+    background-color: brown;
+    padding: 10px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.innerbox{
+    height: 100%;
+    width: fit-content;
+    background-color: aqua;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.image{
+    height: 100%;
+    width: 250px;
+    background-color: rgb(14, 142, 99);
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-600px);
+    }
+}
